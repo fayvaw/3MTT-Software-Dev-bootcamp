@@ -18,3 +18,13 @@ def get_num():
     num2 = int(input("Enter another number: "))
     return num1, num2
 
+def main():
+    num1, num2 = get_num()
+    added = add_num(num1, num2)
+    subtr = subt_num(num1, num2)
+    prod = prod_num(num1, num2)
+
+    print(f"Sum: {added}")
+    print(f"Diff: {subtr}")
+    print(f"Prod: {prod}")
+
