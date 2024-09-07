@@ -12,3 +12,9 @@ def subt_num(num1, num2):
 
 def prod_num(num1, num2):
     return num1 * num2
+
+def get_num():
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter another number: "))
+    return num1, num2
+
