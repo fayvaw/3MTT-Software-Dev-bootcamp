@@ -18,6 +18,15 @@ def get_num():
     num2 = int(input("Enter another number: "))
     return num1, num2
 
+def get_op():
+    op = ''
+    while not op in ("+", "-", "*", "/"):
+        op = input("Enter an arithmetic operator (+, -, *, /): ")
+        if op in ("+", "-", "*", "/"):
+            print("Please enter a valid operation!")
+            break
+    return op
+
 def main():
     num1, num2 = get_num()
     added = add_num(num1, num2)
