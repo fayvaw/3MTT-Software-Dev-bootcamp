@@ -13,6 +13,9 @@ def subt_num(num1, num2):
 def prod_num(num1, num2):
     return num1 * num2
 
+def quot_num(num1, num2):
+    return num1/num2
+
 def get_num():
     num1 = int(input("Enter a number: "))
     num2 = int(input("Enter another number: "))
@@ -37,6 +40,8 @@ def main():
             result = subt_num(num1, num2)
         case '*':
             result = prod_num(num1, num2)
+        case '/':
+            result = quot_num(num1, num2)
 
     print(f"{num1} {op} {num2} = {result}")
     
