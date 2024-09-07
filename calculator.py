@@ -29,13 +29,17 @@ def get_op():
 
 def main():
     num1, num2 = get_num()
-    added = add_num(num1, num2)
-    subtr = subt_num(num1, num2)
-    prod = prod_num(num1, num2)
+    op = get_op()
+    match op:
+        case '+':
+            result = add_num(num1, num2)
+        case '-':
+            result = subt_num(num1, num2)
+        case '*':
+            result = prod_num(num1, num2)
 
-    print(f"Sum: {added}")
-    print(f"Diff: {subtr}")
-    print(f"Prod: {prod}")
+    print(f"{num1} {op} {num2} = {result}")
+    
 
 if __name__ == '__main__':
     main()
