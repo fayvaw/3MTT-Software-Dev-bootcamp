@@ -28,3 +28,5 @@ def main():
     print(f"Diff: {subtr}")
     print(f"Prod: {prod}")
 
+if __name__ == '__main__':
+    main()
