@@ -26,8 +26,8 @@ def get_op():
     while not op in ("+", "-", "*", "/"):
         op = input("Enter an arithmetic operator (+, -, *, /): ")
         if op in ("+", "-", "*", "/"):
-            print("Please enter a valid operation!")
             break
+        print("Please enter a valid operation!")
     return op
 
 def main():
@@ -44,7 +44,7 @@ def main():
             result = quot_num(num1, num2)
 
     print(f"{num1} {op} {num2} = {result}")
-    
+
 
 if __name__ == '__main__':
     main()
